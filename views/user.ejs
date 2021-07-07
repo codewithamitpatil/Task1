@@ -1,0 +1,482 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="stylesheet" href="/styles1.css">
+<link crossorigin="anonymous" href="https://fonts.googleapis.com/icon?family=Material+Icons"
+rel="stylesheet">
+<link crossorigin="anonymous"  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>User</title>
+
+<style>
+
+@media screen and (max-width:908px) {
+
+.hide{
+display: none;
+}
+
+.userdetails_section{
+
+display: flex;
+justify-content: space-between;
+
+background:#fff;
+
+width:90%;
+margin: 0px;
+padding: 20px;
+padding-top: 10px;
+padding-bottom: 30px;
+/* margin-top: 20px; */
+box-shadow: 1px 10px 10px rgb(0,0,0,0.1);
+
+}
+.userdetails_section .leftcol{
+display: flex;
+flex-direction: column;
+text-align: left;
+padding: 0px;
+background: #fff;
+font-size: normal;
+margin: 0px;
+
+}
+.userdetails_section .leftcol span{
+font-size: 400;
+color: #79889e;
+font-size: 18px;
+font-family: 'Poppins';
+padding: 0px;
+padding-top: 10px;
+}
+.userdetails_section .rightcol{
+display: flex;
+flex-direction: column;
+text-align: left;
+padding: 0px;
+background: #fff;
+font-size: normal;
+margin: 0px;
+
+}
+.userdetails_section .rightcol span{
+font-size: 400;
+color: #79889e;
+font-size: 15px;
+font-family: 'Poppins';
+padding: 0px;
+padding-top: 12px;
+text-align:left;
+justify-content: left;
+display: flex;
+
+
+
+
+}
+.userdetails_section .rightcol span:nth-child(3)
+{
+padding-top: 17px;
+}
+
+.rightcol{
+width: 70%;
+background: #79889e;
+text-align: left;
+}
+
+/*   dash */
+
+.temp-contain  .temp_dash .box{
+width: 160px;
+}
+
+#bigscreen{
+display: none;
+}
+
+.backbtn{
+display: none;
+
+}
+}
+
+
+@media screen and (min-width:1108px) {
+
+.box span p{
+font-size: 29px;
+}
+
+.heading{
+/* padding-left: 40px; */
+margin-top: 20px;
+text-align: center;
+}
+.headingprofile{
+margin-left: -20px;
+margin-top: 20px;
+color: #3880ffba;
+font-family: var(--body-font);
+font-size:22px;
+font-weight:400;
+
+
+text-align: center;
+}
+
+
+
+
+.hide{
+display: none;
+}
+
+.userdetails_section{
+
+display: flex;
+justify-content: space-between;
+
+background:#fff;
+
+width:85%;
+margin: 0px;
+padding: 20px;
+padding-top: 10px;
+padding-bottom: 30px;
+margin-left: 40px;
+/* margin-top: 20px; */
+box-shadow: 1px 10px 10px rgb(0,0,0,0.1);
+
+}
+.userdetails_section .leftcol{
+display: flex;
+flex-direction: column;
+text-align: left;
+padding: 0px;
+background: #fff;
+font-size: normal;
+margin: 0px;
+
+}
+.userdetails_section .leftcol span{
+font-size: 400;
+color: #79889e;
+font-size: 18px;
+font-family: 'Poppins';
+padding: 0px;
+padding-top: 10px;
+}
+.userdetails_section .rightcol{
+display: flex;
+flex-direction: column;
+text-align: left;
+padding: 0px;
+background: #fff;
+font-size: normal;
+margin: 0px;
+
+}
+.userdetails_section .rightcol span{
+font-weight: 400;
+color: #79889e;
+font-size: 16px;
+font-family: 'Poppins';
+padding: 0px;
+padding-top: 10px;
+}
+.userdetails_section .rightcol span:nth-child(3)
+{
+padding-top: 17px;
+
+}
+
+.rightcol{
+width: 75%;
+background: #79889e;
+}
+
+/*    table */
+
+#smallscreen{
+display: none;
+}
+
+
+.backbtn{
+margin-top: 50px;
+border: 1px solid snow;
+font-size: 16px;
+/* background: #79889e; */
+padding: 10px;
+width: 200px;
+
+}
+.backbtn a{
+border: 1px solid snow;
+font-size: 16px;
+background: #79889e;
+padding: 10px;
+width: 200px;
+color: #fff;
+}
+.dash{
+display: none;
+}
+
+
+.inner-contain{
+padding-top: 0px;
+}
+
+body::-webkit-scrollbar {
+display: none;
+}
+
+.inner-contain{
+
+height:75vh;
+overflow-y:scroll;
+}
+.inner-contain::-webkit-scrollbar {
+display: none;
+}
+
+
+
+}
+
+
+
+
+
+
+</style>
+
+</head>
+<body>
+
+<input type="hidden" id="uid" value="<%=uid%>" />
+
+<header class="header">
+
+<a href="" class="header__logo">Code With Amit</a>
+
+
+<i class="material-icons" style="color: #fff;" class="header__toggle" id="nav-toggle">
+menu
+</i> 
+<nav class="nav" id="nav-menu">
+<div class="nav__content bd-grid">
+
+
+
+
+
+<div class="nav__perfil">
+
+<!-- <div class="nav__img">
+<img src="assets/img/perfil.png" alt="">
+</div> -->
+
+<i class="material-icons"
+style="color: #fff;float: right;" class="nav__close" id="nav-close">
+segment
+</i> 
+
+<div>
+<a href="#" class="nav__name" >Developers Bank</a>
+
+</div>
+
+</div>
+
+
+<div class="nav__menu">
+<ul class="nav__list">
+<li class="nav__item"><a href="./../" class="nav__link ">Home</a></li>
+<li class="nav__item dash"><a href="./dashboard" class="nav__link ">Dash Board</a></li>
+<li class="nav__item"><a href="./../manage" class="nav__link active">Manage Customers</a></li>
+<li class="nav__item"><a href="./../addcustomer" class="nav__link ">Add Customers</a></li>
+<li class="nav__item"><a href="./../transfermoney" class="nav__link ">Transfer Money</a></li>
+<li class="nav__item"><a href="./../transaction" class="nav__link">Transaction History</a></li>
+
+</ul>
+</div>
+
+
+
+
+
+</div>
+</nav>
+</header>
+
+
+
+<div class="main-section">
+
+<div class="temp-contain">
+
+<div class="temp_dash" id="temp_dash">
+ 
+<div class="box">
+
+<h1>  Credit </h1>
+
+<span> <i class="material-icons">
+attach_money
+</i> <p> </p> </span> 
+</div>
+
+<div class="box">
+<h1>  Debit </h1>
+<span> <i class="material-icons">
+attach_money
+</i> <p> </p> </span> 
+</div>
+
+</div>
+
+<h1 class="headingprofile" >User Profile</h1>
+
+<div class="userdetails_section">
+
+<div class="leftcol">
+
+<span>Name :</span>
+<span>Email :</span>
+<span>Amount :</span>
+<span>Phone:</span>
+<span>Address :</span>
+</div>
+<span id="userDetails"></span>
+<!-- <div class="rightcol" >
+
+<span> Amit Gujar Patil</span>
+<span> amitwebdev2019@gmail.com</span>
+<span>12000</span>
+<span>8888565473 </span>
+<span>vikas nagar ,latur</span>
+
+</div> -->
+
+</div>
+
+<div class="backbtn">
+<a href="manage.html" > 
+Back
+</a>
+</div>
+</div>
+
+<div class="inner-contain">
+<h1 class="heading">Transaction History</h1>
+
+<div id="bigscreen" style="padding: 0px;margin: 0px;">
+<table class="table table-hover">
+
+<thead>
+<tr>
+<th scope="col">Sr</th>
+<th scope="col">Name</th>
+<th >Phone </th>
+<th  scope="col">Amount</th>
+<th scope="col" class="status">Status</th>
+<th scope="col" class="date">Date</th>
+</tr>
+</thead>
+<tbody id="bigframe">
+<!-- <tr>
+<td>1</td>
+<td>Mark patil</td>
+<td>email</td>
+<td >8888565473</td>
+<td>Otto</td>
+<td >
+<a href="user.html?id=2" >   
+<input type="submit" value="Credit" class="btn"        
+  />  
+</a>
+
+</td>
+<td >
+3-3-2000
+</td>
+
+
+</tr>
+-->
+</tbody>
+</table>
+
+
+
+</div>  
+
+<div id="smallscreen" style="padding: 0px;margin: 0px;">
+
+<!-- <table class="table table-hover">
+
+<thead>
+<tr>
+<th scope="col">Sr</th>
+<th scope="col">Name</th>
+<th scope="col">Email</th>
+<th >Phone </th>
+<th scope="col">Amount</th>
+<th scope="col" class="status">Status</th>
+<th scope="col" class="date">Date</th>
+</tr>
+</thead>
+<tbody id="smallframe">
+
+<tr>
+<td>1</td>
+<td>Mark</td>
+<td>Mark</td>
+<td >8888565473</td>
+<td >Otto</td>
+<td >
+<a href="user.html?id=2" >   <input type="submit" value="Debit" class=" btndebit"        
+  />  
+</a>
+
+</td>
+<td >
+3-3-2000
+</td>
+
+
+</tr>
+
+
+</tbody>
+</table> -->
+
+</div>  
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+<script crossorigin="anonymous" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="/assets/js/main.js"></script> 
+<script src="/javascript/asyncFunctions.js"></script> 
+<script src="/javascript/users.js"></script> 
+
+
+
+</body>
+</html>

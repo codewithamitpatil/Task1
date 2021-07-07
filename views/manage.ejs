@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="stylesheet" href="/assets/css/styles1.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+rel="stylesheet">
+
+<title>Manage</title>
+
+<style>
+
+@media screen and (max-width:908px) {
+
+.hide{
+display: none;
+}
+.temp-contain   .box:nth-child(3){
+display: none;
+}
+
+}
+
+@media screen and (min-width:1108px) {
+
+.temp-contain   .box{
+width: 300px;
+
+}
+.temp-contain{
+margin-top: -30px;
+}
+
+.dash{
+display: none;
+}
+
+body::-webkit-scrollbar {
+display: none;
+}
+
+.inner-contain{
+
+height:75vh;
+overflow-y:scroll;
+}
+.inner-contain::-webkit-scrollbar {
+display: none;
+}
+
+}
+
+
+
+
+
+</style>
+
+</head>
+<body>
+<!-- 
+<div class="overlay">
+</div> -->
+
+<header class="header">
+
+<a href="" class="header__logo">Code With Amit</a>
+
+
+<i class="material-icons" style="color: #fff;" class="header__toggle" id="nav-toggle">
+menu
+</i> 
+<nav class="nav" id="nav-menu">
+<div class="nav__content bd-grid">
+
+
+
+
+
+<div class="nav__perfil">
+
+<!-- <div class="nav__img">
+<img src="assets/img/perfil.png" alt="">
+</div> -->
+
+<i class="material-icons"
+style="color: #fff;float: right;" class="nav__close" id="nav-close">
+segment
+</i> 
+
+<div>
+<a href="#" class="nav__name" >Developers Bank</a>
+
+</div>
+
+</div>
+
+<div class="nav__menu">
+<ul class="nav__list">
+<li class="nav__item"><a href="./" class="nav__link ">Home</a></li>
+<li class="nav__item dash"><a href="./dashboard" class="nav__link ">Dash Board</a></li>
+<li class="nav__item"><a href="./manage" class="nav__link active">Manage Customers</a></li>
+<li class="nav__item"><a href="./addcustomer" class="nav__link ">Add Customers</a></li>
+<li class="nav__item"><a href="./transfermoney" class="nav__link ">Transfer Money</a></li>
+<li class="nav__item"><a href="./transaction" class="nav__link">Transaction History</a></li>
+
+</ul>
+</div>
+
+
+
+
+
+</div>
+</nav>
+</header>
+
+
+<div class="main-section">
+
+<div class="temp-contain">
+
+<div class="box">
+
+<h1>  Customers </h1>
+
+<span> <i class="material-icons">
+group_add
+</i> <p> 500</p> </span> 
+</div>
+
+<div class="box">
+<h1>  Amount </h1>
+<span> <i class="material-icons">
+attach_money
+</i> <p> </p> </span> 
+</div>
+
+<div class="box hide">
+<h1>  Transactions </h1>
+<span>  <p> </p> </span> 
+</div> 
+
+</div>
+
+<div class="inner-contain">
+<h1 class="heading">Customers List</h1>
+
+<table class="table table-hover">
+
+<thead>
+<tr>
+<th scope="col">Sr</th>
+<th scope="col">Name</th>
+<th class="hide"> Email </th>
+<th class="hide"> Phone </th>
+<th class="hide" scope="col">Amount</th>
+<th scope="col">Action</th>
+</tr>
+</thead>
+<tbody id="frame">
+
+
+
+</tbody>
+</table>
+
+</div>
+
+
+
+</div>
+
+
+
+
+<!--===== MAIN JS =====-->
+
+<script crossorigin="anonymous" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="/assets/js/main.js"></script> 
+<script src="/javascript/asyncFunctions.js"></script> 
+<script src="/javascript/mainDash.js"></script> 
+<script src="/javascript/manageUsers.js"></script> 
+
+
+
+</body>
+</html>

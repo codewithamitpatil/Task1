@@ -1,0 +1,391 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="stylesheet" href="/styles1.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Add Customer</title>
+
+<style>
+
+@media screen and (max-width:908px) {
+
+.hide{
+display: none;
+}
+
+.userdetails_section{
+
+display: flex;
+justify-content: space-between;
+
+background:#fff;
+
+width:96%;
+margin: 0px;
+padding: 20px;
+padding-top: 10px;
+padding-bottom: 30px;
+/* margin-top: 20px; */
+box-shadow: 1px 10px 10px rgb(0,0,0,0.1);
+
+}
+
+
+/*    transfer money */
+
+.send_money
+{
+display: flex;
+justify-content: center;
+flex-direction: column;
+background:#fff;
+
+width:96%;
+margin: 0px;
+padding: 10px;
+padding-top: 10px;
+padding-bottom: 30px;
+/* margin-top: 20px; */
+/* box-shadow: 1px 10px 10px rgb(0,0,0,0.1);
+*/
+}
+.send_money .inputbox{
+display: flex;
+justify-content: center;
+align-items: center;
+margin-bottom: 10px;
+}
+.send_money .inputbox input{
+padding: 15px;
+width: 290px;
+border: none;
+border: 2px solid rgb(0,0,0,0.1);
+font-size: 16px;
+font-family: 'Poppins';
+color: #79889e; 
+
+outline: 1px solid #3880ffba;
+}
+
+.send_money .inputbox:nth-child(7) input{
+outline: none;
+color: #fff;
+font-size: 17px;
+background: linear-gradient(to right, #FE4F70 0%, #FFA387 100%);
+}
+
+.send_money .inputbox h4{
+font-size: 16px;
+font-family: 'Poppins';
+font-weight: 400;
+}
+
+.send_money .inputbox .green{
+color: rgb(4, 95, 95);
+}
+.send_money .inputbox .red{
+color:#fe4f70;
+}
+
+
+/*  dash hide  */
+
+.temp-contain
+{
+display:none;
+}
+
+.send_money .inputbox input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+color: #79889e; 
+opacity: 1; /* Firefox */
+}
+.send_money .inputbox .green{
+color: rgb(4, 95, 95);
+}
+.send_money .inputbox .red{
+color:#fe4f70;
+}
+
+/*   containr  */
+.inner-contain{
+margin-top: -20px;
+
+}
+body{
+    overflow-y: hidden;
+}
+.inner-contain::-webkit-scrollbar {
+width: 12px;
+}
+
+}
+
+
+@media screen and (min-width:1108px) {
+
+/* .dash{
+display: none;
+} */
+
+.heading{
+/* padding-left: 40px; */
+margin-top: -10px;
+text-align: center;
+}
+.headingprofile{
+margin-left: -20px;
+margin-top: -20px;
+color: #3880ffba;
+font-family: var(--body-font);
+font-size:22px;
+font-weight:400;
+
+
+text-align: center;
+}
+
+
+
+
+.hide{
+display: none;
+}
+
+
+/*    transfer money */
+
+.send_money
+{
+display: flex;
+justify-content: center;
+flex-direction: column;
+background:#fff;
+
+width:96%;
+margin: 0px;
+padding: 10px;
+padding-top: 0px;
+padding-bottom: 10px;
+/* margin-top: 20px; */
+/* box-shadow: 1px 10px 10px rgb(0,0,0,0.1);
+*/
+}
+.send_money .inputbox{
+display: flex;
+justify-content: center;
+align-items: center;
+margin-bottom: 10px;
+}
+.send_money .inputbox input{
+padding: 10px;
+width: 290px;
+border: none;
+border: 1px solid rgb(0,0,0,0.1);
+font-size: 15px;
+font-family: 'Poppins';
+color: #79889e; 
+outline: 1px solid #3880ffba;
+}
+
+.send_money .inputbox input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+color: #79889e; 
+opacity: 1; /* Firefox */
+}
+
+
+.send_money .inputbox:nth-child(7) input{
+outline: none;
+color: #fff;
+font-size: 17px;
+background: linear-gradient(to right, #FE4F70 0%, #FFA387 100%);
+}
+
+.send_money .inputbox h4{
+font-size: 16px;
+font-family: 'Poppins';
+font-weight: 400;
+}
+
+.send_money .inputbox .green{
+color: rgb(4, 95, 95);
+}
+.send_money .inputbox .red{
+color:#fe4f70;
+}
+
+
+
+.temp-contain   .box{
+width: 300px;
+margin-bottom: 30px;
+margin-left:60px;
+}
+
+.dash{
+display: none;
+}
+
+}
+
+
+
+
+
+
+</style>
+
+</head>
+<body>
+
+
+<header class="header">
+
+<a href="" class="header__logo">Code With Amit</a>
+
+
+<i class="material-icons" style="color: #fff;" class="header__toggle" id="nav-toggle">
+menu
+</i> 
+<nav class="nav" id="nav-menu">
+<div class="nav__content bd-grid">
+
+
+
+
+
+<div class="nav__perfil">
+
+<!-- <div class="nav__img">
+<img src="assets/img/perfil.png" alt="">
+</div> -->
+
+<i class="material-icons"
+style="color: #fff;float: right;" class="nav__close" id="nav-close">
+segment
+</i> 
+
+<div>
+<a href="#" class="nav__name"  >Developers Bank</a>
+
+</div>
+
+</div>
+
+<div class="nav__menu">
+    <ul class="nav__list">
+    <li class="nav__item"><a href="./" class="nav__link ">Home</a></li>
+    <li class="nav__item dash"><a href="./dashboard" class="nav__link ">Dash Board</a></li>
+    
+    
+    <li class="nav__item"><a href="./manage" class="nav__link">Manage Customers</a></li>
+    <li class="nav__item"><a href="./addcustomer" class="nav__link active">Add Customers</a></li>
+    <li class="nav__item"><a href="./transfermoney" class="nav__link ">Transfer Money</a></li>
+    <li class="nav__item"><a href="./transaction" class="nav__link">Transaction History</a></li>
+    
+    </ul>
+    </div>
+    
+
+
+
+
+
+</div>
+</nav>
+</header>
+
+<!-- hedader end-->
+
+<div class="main-section">
+
+<div class="temp-contain">
+
+<div class="temp_dash">
+
+<div class="box">
+
+<h1>  Customers </h1>
+
+<span> <i class="material-icons">
+group_add
+</i> <p> </p> </span> 
+</div>
+
+<div class="box">
+<h1>  Amount </h1>
+<span> <i class="material-icons">
+attach_money
+</i> <p> </p> </span> 
+</div>
+
+<div class="box hide">
+<h1>  Transactions </h1>
+<span>  <p> </p> </span> 
+</div>
+
+</div>
+
+</div>
+
+<div class="inner-contain">
+
+    <h1 class="heading">Add New User</h1>
+
+<form onsubmit="event.preventDefault(); "  class="send_money">
+
+<div class="inputbox">
+<input type="text" id="name"  placeholder="Enter Name." required />
+</div>
+<div class="inputbox">
+<input type="email" id="email" required placeholder="Enter Email." />
+</div>
+
+<div class="inputbox">
+<input type="phone"  id="phone" required  placeholder="Enter  Phone No." />
+</div>
+<div class="inputbox">
+<input type="text" id="amount" required placeholder="Enter  Amount." />
+</div>
+
+<div class="inputbox">
+<input type="text" id="address"  placeholder="Enter Address." />
+</div>
+
+<div class="inputbox">
+<input type="button" id="addbtn" style="outline: none;"    value="Submit"/>
+</div>
+
+
+<div class="inputbox" id="msg">
+
+</div>
+
+
+</form>
+
+</div>
+
+</div>
+
+<!-- main-section end-->
+
+
+<!--===== MAIN JS =====-->
+
+<script crossorigin="anonymous" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="/assets/js/main.js"></script> 
+<script src="/javascript/asyncFunctions.js"></script> 
+<script src="/javascript/mainDash.js"></script> 
+<script src="/javascript/addUser.js"></script> 
+
+
+
+</body>
+</html>
