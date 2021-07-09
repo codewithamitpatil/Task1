@@ -7,18 +7,234 @@
 
 <meta name="viewport" content= "width=device-width,initial-scale=1.0, user-scalable=no">
 <!-- ===== CSS ===== -->
-<link rel="stylesheet" href="/assets/css/styles.css">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
 rel="stylesheet">
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-----/////////-->
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+
+
+
+<link rel="stylesheet" type="text/css"
+ href="/teststyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.css"/>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.js"></script>
+  <script src="/javascript/scripts.js"></script>
+
+
+
+<!-----/////////-->
+
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+
+
+<link rel="stylesheet" href="/assets/css/styles.css">
+
+
+
 
 <title>Home</title>
+
+
+<style>
+    body, html {
+      height: 100%;
+      color: #777;
+      line-height: 1.8;
+      padding: 0px;
+      background: #fff;
+      /* background: #1e266d; */
+    }
+    
+      .w3-wide {letter-spacing: 10px;}
+    .w3-hover-opacity {cursor: pointer;}
+    
+    @media only screen and (max-device-width: 1600px) {
+      .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+        min-height: 400px;
+      }
+    }
+    
+    .btn-solid-lg {
+	display: inline-block;
+	padding: 1.625rem 2.625rem 1.625rem 2.625rem;
+	border: 1px solid #ff6c02;
+	border-radius: 32px;
+  background: linear-gradient(to right, #FE4F70 0%, #FFA387 100%);
+
+	color: #ffffff;
+	font-weight: 600;
+	font-size: 0.875rem;
+	line-height: 0;
+	text-decoration: none;
+	transition: all 0.2s;
+  box-shadow: 0 9px 26px rgb(58 87 135 / 10%);
+ }
+
+.btn-solid-lg:hover {
+	/* border: 1px solid #ff6c02; */
+	/* background-color: transparent; */
+ /* needs to stay here because of the color property of a tag */
+	text-decoration: none;
+  background: #ff6c02;
+
+} 
+body, p {
+	color: #515867; 
+	font: 400 1rem/1.625rem "Open Sans", sans-serif;
+}
+   
+h1 {
+	color: #1e266d;
+	font-weight: 700;
+	font-size: 2.5rem;
+	line-height: 3.125rem;
+	letter-spacing: -0.5px;
+} 
+
+
+@media only screen and (max-device-width: 800px) {
+
+  .main_top{
+  margin-top: -55px;
+  /* padding: 150px; */
+  background: white;
+
+}
+
+.second{
+  margin-top: 30px;
+}
+
+.padding{
+display: none;
+}
+
+.basic-2 {
+
+padding: 0px;
+    /* justify-content: center; */
+width: 100%;
+
+}
+.basic-2 h2{
+  width: 100%;
+  text-align: left;
+}
+.basic-2 .intro
+{
+
+  width: 100%;
+  text-align: left;
+  padding: 15px;
+}
+
+.intro p
+{
+  color:#79889e;
+  font-size: 17px;
+text-align: left;
+  width: 100%;
+  padding: 0px;
+}
+
+
+
+}
+
+@media only screen and (max-device-width: 1600px) {
+      .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+        min-height: 400px;
+      } 
+    
+      .main_top{
+  margin-top: 45px;
+  /* padding: 150px; */
+  padding-top: 100px;
+  background: white;
+}
+.padding{
+  height: 40px;
+  width: 100%;
+  background: white;
+}
+ 
+.contact_section
+{
+  background: #fff;
+  box-shadow: 0 9px 26px rgb(58 87 135 / 10%);
+
+}
+   
+
+
+
+.basic-2 {
+	padding-top: 1.25rem;
+	padding-bottom: 5rem;
+		background-size: cover;
+    display: flex;
+    justify-content: center;
+
+}
+
+.basic-2 h2 {
+	margin-bottom: 1.5rem;
+  color: #1e266d;
+	font-weight: 700;
+	font-size: 2rem;
+	line-height: 2.625rem;
+	letter-spacing: -0.4px;
+}
+
+.basic-2 .intro {
+	margin-bottom: 1.5rem;
+}
+
+
+.basic-2 .text-container p {
+	margin-bottom: 1.75rem;
+}
+
+
+
+.intro
+{
+  text-align: center;
+  width: 50%;
+
+}
+
+.intro p
+{
+  color:#79889e;
+  font-size: 17px;
+}
+
+
+
+
+    }
+
+
+
+
+    </style>
+
 </head>
 <body>
 
-<div class="overlay">
-</div>
+
 
 <header class="header">
 
@@ -37,9 +253,7 @@ rel="stylesheet">
 
 <div class="nav__perfil">
 
-<!-- <div class="nav__img">
-<img src="assets/img/perfil.png" alt="">
-</div> -->
+
 
 <i class="material-icons"
 style="color: #fff;float: right;" class="nav__close" id="nav-close">
@@ -47,7 +261,7 @@ segment
 </i> 
 
 <div>
-<a href="#" class="nav__name" >Developers Bank</a>
+<a href="#" style="color: #fe4f70;" class="nav__name" >Developers Bank</a>
 
 </div>
 
@@ -76,109 +290,353 @@ segment
 </header>
         
 
-<div class="main-header">
-
-<div class="left-div">
-</div>
-
-<div class="right-div">
-
-<div class="inner-wrapper">
-
-<h1>Welcome To Developers Bank </h1>
-<p> Developers bank is 
-Revolutionary online bank.<br/> Built to help you .
-Save your time and money .<br/>
-Store your savings the easy way.
-</p>
-
-<div class="adjust-icon">
 
 
-<h4> FIND US ON SOCIAL MEDIA</h4>
+<!-- First Grid -->
+<div style="background: white;"  class="w3-row-padding w3-padding-32 w3-container main_top">
+  <div class="w3-content">
+    <div class="padding w3-col">
 
-<div class="a4st">
+    </div>
+    <div class="w3-col  m6">
+      <h1>Now is the time to start  online banking</h1>
+      <h5 class="w3-padding-32">
 
-<div class="flex-box">
-
-<div class="nav-menu">
-
-<div class="circle">
-    <a href="https://stackoverflow.com/users/16163616/amit-gujar" style="display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;margin: 0px;
-    text-align: center;"> 
-   <img src="/stack.png"style="width: 90%;" />
-</a>
-
-</div>
-
-</div>	
-
-<div class="nav-menu">
-
-<div class="circle">
-
-   <a href="https://www.linkedin.com/in/amit-gujar-3b269a1b3/" style="display: flex;
-   justify-content: center;
-   align-items: center;
-   padding: 0px;margin: 0px;
-   text-align: center;"> 
-   <img src="/linked.png"style="width: 90%;" />
-   </a>
-
-</div>
-
-</div>	
+        Developers Bank is a leading online banking platform
+         which offers amazing features for manageing your money.
+      </h5>
+      <a class="btn-solid-lg" 
+      href="manage">Lets Get Start</a>
+       
 
 
-<div class="nav-menu">
 
-<div class="circle">
-    <a href="https://github.com/codewithamitpatil" style="display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;margin: 0px;
-    text-align: center;"> 
-    <img src="/git.png"  style="width: 50%;"/>
-    </a>
-</div>
+    </div>
 
-</div>	
-<div class="nav-menu">
+    <div class="w3-col m6 w3-center second">
 
-<div class="circle">
-    <a href="https://www.instagram.com/amitgujarpatil/" style="display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;margin: 0px;
-    text-align: center;"> 
-    <img src="/insa.png"  style="width: 50%;"/>
-    </a>
-</div>
+        <img class="img-fluid" src="/header.png" alt="alternative">
 
-</div>	
 
-</div>	
+    </div>
+
+    <div class="padding w3-col">
+
+    </div>
+
+  </div>
+
 
 
 </div>
 
 
+
+
+
+<div id="details" class="basic-2">
+
+              <div class="intro">
+                  <h2>Why Should You Trust Us? </h2>
+                  <p>Your trust is what
+                     we value above everything else.
+                      We want to be a reliable service for 
+                      everyone, and our team knows that your 
+                      trust is a reward for the excellent job.
+                       To win this reward, we provide the high-quality service and care about every customer.
+                     
+                 </p>
+              </div> <!-- end of intro -->
 </div>
 
-</div>
+
+
+
+
+
+
+
+
+
+<section>
+<div class="container">
+<div class="section-title">
+<h2>Testimonials</h2>
+<span class="section-separator"></span>
 
 </div>
+</div>
+<div class="testimonials-carousel-wrap">
+<div class="listing-carousel-button listing-carousel-button-next"><i class="fa fa-caret-right" style="color: #fff"></i></div>
+<div class="listing-carousel-button listing-carousel-button-prev"><i class="fa fa-caret-left" style="color: #fff"></i></div>
+<div class="testimonials-carousel">
+<div class="swiper-container">
+<div class="swiper-wrapper">
 
 
+<div class="swiper-slide">
+<div class="testi-item">
+<div class="testi-avatar"><img src="/kar.png"></div>
+<div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
+<div class="testimonials-text">
+<div class="listing-rating">
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+</div>
+<p>Take a moment to appreciate that someone believed in you enough to give you this project and all they ask of you is to believe them. So believe them, trust yourself and you will prove them right.</p>
+<a href="#" class="text-link"></a>
+<div class="testimonials-avatar">
+<h3>Arjun Dode</h3>
+<h4>Network Engineer At Wipro </h4>
+</div>
+</div>
+<div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div> 
+</div>
+</div>
+
+<!--second--->
+<div class="swiper-slide">
+<div class="testi-item">
+<div class="testi-avatar"><img src="/omkesh.png"></div>
+<div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
+<div class="testimonials-text">
+<div class="listing-rating">
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+</div>
+<p>Your best quality is that when faced with a problem, you listen first, take into account everything and then try to come up with a solution.</p>
+<a href="#" class="text-link"></a>
+<div class="testimonials-avatar">
+<h3>Omkesh Munde</h3>
+<h4>Paythonist</h4>
+</div>
+</div>
+<div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div> 
+</div>
+</div>
+<!--third-->
+
+<!--fourth-->
+<div class="swiper-slide">
+  <div class="testi-item">
+  <div class="testi-avatar"><img src="/san.jpg"></div>
+  <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
+  <div class="testimonials-text">
+  <div class="listing-rating">
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+  </div>
+  <p>You have what all the greats had: a brain, a solid work ethic, and one hundred sixty-eight hours in a week. Work hard, keep innovating, and keep going from sun up to sun down and soon this project will be just another testament to how great you are.</p>
+  <a href="#" class="text-link"></a>
+  <div class="testimonials-avatar">
+  <h3>Sangam Dalal</h3>
+  <h4>UI UX developer</h4>
+  </div>
+  </div>
+  <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div> 
+  </div>
+  </div>
+
+
+<div class="swiper-slide">
+<div class="testi-item">
+<div class="testi-avatar"><img src="/dur.jpeg"></div>
+<div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
+<div class="testimonials-text">
+<div class="listing-rating">
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+</div>
+<p>This is your time right now. 
+  You have come this far and you are 
+  willing to challenge yourself once again.
+    </p>
+<a href="#" class="text-link"></a>
+<div class="testimonials-avatar">
+<h3>Durgesh Dharmadhikari</h3>
+<h4>Fullstack Developer</h4>
+</div>
+</div>
+<div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div> 
+</div>
 </div>
 
 
-<!-- ===== IONICONS ===== -->
+<!--testi end-->
+
+</div>
+</div>
+</div>
+
+<div class="tc-pagination"></div>
+</div>
+</section>
+
+
+
+
+
+
+<!-- contact us -->
+<div class="w3-content w3-container w3-padding-64 contact_section" id="contact">
+    <h3 style="font-family: Lato, sans-serif;"  class="w3-center">Contact Us</h3>
+    <p class="w3-center" style="font-family: Lato, sans-serif;color:#79889e;" ><em>I'd love your feedback!</em></p>
+  
+    <div class="w3-row w3-padding-32 w3-section" style="font-family: Lato, sans-serif;color:#79889e;" >
+      <div class="w3-col m4 w3-container">
+        <img src="/a1.png" class="w3-image w3-round" style="width:100%">
+      </div>
+      <div class="w3-col m8 w3-panel">
+        <div class="w3-large w3-margin-bottom">
+          <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Latur, India<br>
+          <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +91 7666194617<br>
+          <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: amitwebdev2019@gmail.com<br>
+        </div>
+        <p> Leave me a note:</p>
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+          <button class="w3-button w3-black w3-right w3-section" type="submit">
+            <i class="fa fa-paper-plane"></i> SEND MESSAGE
+          </button>
+        </form>
+      </div>
+    </div>
+
+
+
+    <div class="a4st">
+  
+      <div class="flex-box">
+      
+      <div class="nav-menu">
+      
+      <div class="circle">
+          <a href="https://stackoverflow.com/users/16163616/amit-gujar" style="display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 0px;margin: 0px;
+          text-align: center;"> 
+         <img src="/stack.png"style="width: 90%;" />
+      </a>
+      
+      </div>
+      
+      </div>	
+      
+      <div class="nav-menu">
+      
+      <div class="circle">
+      
+         <a href="https://www.linkedin.com/in/amit-gujar-3b269a1b3/" style="display: flex;
+         justify-content: center;
+         align-items: center;
+         padding: 0px;margin: 0px;
+         text-align: center;"> 
+         <img src="/linked.png"style="width: 90%;" />
+         </a>
+      
+      </div>
+      
+      </div>	
+      
+      
+      <div class="nav-menu">
+      
+      <div class="circle">
+          <a href="https://github.com/codewithamitpatil" style="display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 0px;margin: 0px;
+          text-align: center;"> 
+          <img src="/git.png"  style="width: 50%;"/>
+          </a>
+      </div>
+      
+      </div>	
+      <div class="nav-menu">
+      
+      <div class="circle">
+          <a href="https://www.instagram.com/amitgujarpatil/" style="display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 0px;margin: 0px;
+          text-align: center;"> 
+          <img src="/insa.png"  style="width: 50%;"/>
+          </a>
+      </div>
+      
+      </div>	
+      
+      </div>	
+      
+      
+      </div>
+
+
+  </div>
+  
+  <br>
+  <br>
+<p style="text-align: center;font-size:16px;color:#79889e;"> Developed BY Amit Gujar Patil  </p>
+<br>
+<br>
+<script crossorigin="anonymous" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+document.getElementById("img01").src = element.src;
+document.getElementById("modal01").style.display = "block";
+var captionText = document.getElementById("caption");
+captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+var navbar = document.getElementById("myNavbar");
+if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+} else {
+    navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+}
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+var x = document.getElementById("navDemo");
+if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+} else {
+    x.className = x.className.replace(" w3-show", "");
+}
+}
+</script>
 
 <!--===== MAIN JS =====-->
- <script src="/assets/js/main.js"></script> 
+ <script src="/assets/js/main.js"></script>
+ 
+
+
 </body>
 </html>
