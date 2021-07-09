@@ -74,6 +74,7 @@ const HttpErrors  = require('http-errors');
    app.use(express.static(__dirname + "/public/"));
    app.use('/w3/', express.static(__dirname + '/node_modules/w3-css/3/'));
    app.use('/swiper/', express.static(__dirname + '/node_modules/swiper/'));
+   app.use('/jquery/', express.static(__dirname + '/node_modules/jquery/dist/'));
 
 
 
