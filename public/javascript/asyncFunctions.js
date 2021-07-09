@@ -1,6 +1,6 @@
 
 
-const url ='http://localhost:7000';
+const url ='https://amitgujarpatil.herokuapp.com';
 
 // for all users
 
