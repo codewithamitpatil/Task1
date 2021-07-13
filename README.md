@@ -32,4 +32,4 @@
 ## API Documentation
 
 
-[Postman api documentation](https://documenter.getpostman.com/view/11617094/TzY4fv9o)
+[Demo](https://amitgujarpatil.herokuapp.com/view/)
