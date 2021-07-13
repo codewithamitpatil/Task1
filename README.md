@@ -1,6 +1,7 @@
 # Task1
 # Online Banking System
 
+[Demo Link](https://amitgujarpatil.herokuapp.com/view/)
 
 ## Features
 
@@ -29,7 +30,6 @@
 
 
 
-## API Documentation
+## Screen Shots
 
 
-[Demo](https://amitgujarpatil.herokuapp.com/view/)
